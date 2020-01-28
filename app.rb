@@ -14,8 +14,8 @@ class App < Sinatra::Base
   
   post '/checkout' do
     @sessions = session
-    #item = params["item"]
-    #@sessions[:item] = item
+    item = params["item"] #sets the params in the session hash
+    @sessions[:item] = item #displays the shopping cart contents
   end
 
 end
